@@ -1,15 +1,16 @@
-<?php 
+<?php
 
+    $rootFolder = "ahmadmujtaba.me";
+    $index = "index.html";
+    $requestUri = $_SERVER["REQUEST_URI"];
 
-$requestUri = substr($_SERVER["REQUEST_URI"], 1);
-
-if($requestUri === "") {
-
-include("index.html");}elseif(file_exists("ahmadmujtaba.me/".$requestUri)) {
-    include($requestUri);
-} else {
-    include("HTTP404.html");
-}
+    if($requestUri === "/") {
+        include($index);
+    } elseif (file_exists($rootFolder.$requestUri)) {
+        include($requestUri);
+    } else {
+        include("HTTP404.html");
+    }
 
 
 ?>
