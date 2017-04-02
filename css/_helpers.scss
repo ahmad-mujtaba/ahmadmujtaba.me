@@ -1,0 +1,37 @@
+/* grid : */
+
+.one-half {
+    float: left;
+    width: 50%;
+}
+
+/* helper classes */
+
+.clear {
+    clear:both;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-light {
+    color:$color-light;
+}
+
+.hero {
+    font-size:48px;
+    font-weight:bold;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.monospaced {
+    font-family:'Courier New',monospace;
+}

@@ -1,0 +1,99 @@
+// variables :
+@import 'reset';
+@import 'variables';
+@import 'helpers';
+
+
+$horizontal-gutter: 8px;
+
+$width-max:         1024;
+
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: "Helvetica Nue","Arial",sans-serif;
+    font-size:14px;
+    color:$color;
+}
+#wrapper {
+    margin:0px auto;
+    width:#{$width-max}px;
+}
+
+header {
+    @extend .clearfix;
+    
+    margin: 70px $horizontal-gutter 0 $horizontal-gutter;
+    padding-bottom:40px;
+    border-bottom: 2px solid $color-accent;
+    h1 {
+        font-size:24px;
+        color:$color-dark;
+        padding-top:12px;
+        
+    }
+    
+    h2 {
+        font-size:18px;
+    }
+    
+    h3 {            
+        color:$color-light;
+    }
+}
+
+article {
+    @extend .clearfix;
+    
+    margin:50px $horizontal-gutter;    
+    p {
+        display:block;
+        
+    }
+}
+
+footer {
+    @extend .clearfix;
+    
+    border-top:1px solid $color-light;
+    margin:0px $horizontal-gutter;
+    padding:12px;
+    font-size:12px;
+    color: $color-light;
+}
+
+
+a {
+    color:$color-accent;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;        
+    }
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+@media screen and (max-width:#{$width-max}px) {
+    #wrapper {
+        width:100%;
+        box-sizing:border-box;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .one-half {
+        float: none;
+        width: 100%;
+        
+        &.text-right {
+            text-align: left;
+        }
+        
+    }
+}
