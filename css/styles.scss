@@ -41,6 +41,7 @@ header {
         @extend .text-tight;
         font-size:16px;
         margin-bottom:0.67em;
+        margin-left: 18px;
         
         i {
             color:$color-xxxlight;
@@ -78,10 +79,10 @@ article {
         box-sizing: border-box;
         
         &:nth-child(2n+1) {
-            padding-right:1.67em;   
+            padding-right:18px;   
         }
         &:nth-child(2n) {
-            padding-left:1.67em;
+            padding-left:18px;
         }
     }
     
@@ -97,7 +98,7 @@ table#skills {
         
         &.tech {
             @extend .text-right;
-            width:33%;
+            width:25%;
             font-weight: bold;
         }
         
@@ -114,7 +115,7 @@ table#skills {
            
            .lvl {
                 display: inline-block;
-                background: $color-light;
+                background: $color-accent;
                 height: 5px;
                 
                 &.lvl-1     {width:10%;}

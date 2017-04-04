@@ -139,7 +139,8 @@ header {
     text-shadow: 1px 1px 2px #000; }
   header h3 {
     font-size: 16px;
-    margin-bottom: 0.67em; }
+    margin-bottom: 0.67em;
+    margin-left: 18px; }
     header h3 i {
       color: rgba(255, 255, 255, 0.35);
       margin-right: 0.25em; }
@@ -159,9 +160,9 @@ article h3 {
 article .one-half {
   box-sizing: border-box; }
   article .one-half:nth-child(2n+1) {
-    padding-right: 1.67em; }
+    padding-right: 18px; }
   article .one-half:nth-child(2n) {
-    padding-left: 1.67em; }
+    padding-left: 18px; }
 article .year {
   color: rgba(255, 255, 255, 0.35); }
 
@@ -170,7 +171,7 @@ table#skills {
   table#skills td {
     padding: 0.4em; }
     table#skills td.tech {
-      width: 33%;
+      width: 25%;
       font-weight: bold; }
     table#skills td .lvl-wrapper {
       font-size: 0;
@@ -180,7 +181,7 @@ table#skills {
       top: -8px; }
       table#skills td .lvl-wrapper .lvl {
         display: inline-block;
-        background: rgba(255, 255, 255, 0.85);
+        background: #FC505C;
         height: 5px; }
         table#skills td .lvl-wrapper .lvl.lvl-1 {
           width: 10%; }
@@ -211,7 +212,7 @@ footer {
   color: rgba(255, 255, 255, 0.85); }
 
 a {
-  color: #ea3f4b;
+  color: #FC505C;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
