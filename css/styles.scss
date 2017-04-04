@@ -64,8 +64,7 @@ article {
         
         padding: 0.67em 0;
         margin-bottom: 0.67em;
-        color: $color-accent;
-        border-bottom:1px solid $color-accent;//$color-xxxxlight;
+        border-bottom:1px solid $color-xxxxlight;
         font-size:22px;
         font-weight: normal;
     }
@@ -88,6 +87,48 @@ article {
     
     .year {
         color: $color-xxxlight;
+    }
+}
+
+table#skills {
+    width: 100%;
+    td {
+        padding:0.4em;
+        
+        &.tech {
+            @extend .text-right;
+            width:33%;
+            font-weight: bold;
+        }
+        
+        &:nth-child(2n) {
+            
+        }
+        
+        .lvl-wrapper {
+           font-size:0;
+           height: 5px;
+           background: $color-xxxxlight;
+           position: relative;
+           top: -8px;
+           
+           .lvl {
+                display: inline-block;
+                background: $color-light;
+                height: 5px;
+                
+                &.lvl-1     {width:10%;}
+                &.lvl-2     {width:20%;}
+                &.lvl-3     {width:30%;}
+                &.lvl-4     {width:40%;}
+                &.lvl-5     {width:50%;}
+                &.lvl-6     {width:60%;}
+                &.lvl-7     {width:70%;}
+                &.lvl-8     {width:80%;}
+                &.lvl-9     {width:90%;}
+                &.lvl-10    {width:100%;}
+           }
+        }
     }
 }
 

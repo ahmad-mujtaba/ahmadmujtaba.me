@@ -82,7 +82,7 @@ a img {
 .text-center {
   text-align: center; }
 
-.text-right {
+.text-right, table#skills td.tech {
   text-align: right; }
 
 .text-light {
@@ -151,8 +151,7 @@ article p {
 article h2 {
   padding: 0.67em 0;
   margin-bottom: 0.67em;
-  color: #ea3f4b;
-  border-bottom: 1px solid #ea3f4b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 22px;
   font-weight: normal; }
 article h3 {
@@ -165,6 +164,44 @@ article .one-half {
     padding-left: 1.67em; }
 article .year {
   color: rgba(255, 255, 255, 0.35); }
+
+table#skills {
+  width: 100%; }
+  table#skills td {
+    padding: 0.4em; }
+    table#skills td.tech {
+      width: 33%;
+      font-weight: bold; }
+    table#skills td .lvl-wrapper {
+      font-size: 0;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.15);
+      position: relative;
+      top: -8px; }
+      table#skills td .lvl-wrapper .lvl {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.85);
+        height: 5px; }
+        table#skills td .lvl-wrapper .lvl.lvl-1 {
+          width: 10%; }
+        table#skills td .lvl-wrapper .lvl.lvl-2 {
+          width: 20%; }
+        table#skills td .lvl-wrapper .lvl.lvl-3 {
+          width: 30%; }
+        table#skills td .lvl-wrapper .lvl.lvl-4 {
+          width: 40%; }
+        table#skills td .lvl-wrapper .lvl.lvl-5 {
+          width: 50%; }
+        table#skills td .lvl-wrapper .lvl.lvl-6 {
+          width: 60%; }
+        table#skills td .lvl-wrapper .lvl.lvl-7 {
+          width: 70%; }
+        table#skills td .lvl-wrapper .lvl.lvl-8 {
+          width: 80%; }
+        table#skills td .lvl-wrapper .lvl.lvl-9 {
+          width: 90%; }
+        table#skills td .lvl-wrapper .lvl.lvl-10 {
+          width: 100%; }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.55);
@@ -194,7 +231,7 @@ i {
   .one-half {
     float: none;
     width: 100%; }
-    .one-half.text-right {
+    .one-half.text-right, table#skills td.one-half.tech {
       text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */
