@@ -1,4 +1,13 @@
-$color:             #333;
-$color-light:       #888;
-$color-dark:        #111;
-$color-accent:      #06d;
+$color-bg:          #152b46;
+$color:             #fff;
+$color-light:       rgba(255, 255, 255, 0.85);
+$color-xlight:       rgba(255, 255, 255, 0.75);
+$color-xxlight:       rgba(255, 255, 255, 0.55);
+$color-xxxlight:       rgba(255, 255, 255, 0.35);
+$color-xxxxlight:       rgba(255, 255, 255, 0.15);
+
+$color-accent:      #ea3f4b;
+
+$wrapper-gutter:    20;
+
+$width-max:         1024;

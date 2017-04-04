@@ -4,63 +4,98 @@
 @import 'helpers';
 
 
-$horizontal-gutter: 8px;
-
-$width-max:         1024;
-
-
-* {
-    margin:0px;
-    padding:0px;
-}
-
 body {
-    font-family: "Helvetica Nue","Arial",sans-serif;
-    font-size:14px;
+    font-family: 'Roboto',sans-serif;
+    font-size:16px;
     color:$color;
+    background-color: $color-bg;
+    background: $color-bg radial-gradient(ellipse at top center,  #295489 0%,#152b46 75%) no-repeat;
+    
+
+
 }
 #wrapper {
     margin:0px auto;
     width:#{$width-max}px;
+    padding: #{$wrapper-gutter}px;
+    
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 header {
     @extend .clearfix;
     
-    margin: 70px $horizontal-gutter 0 $horizontal-gutter;
-    padding-bottom:40px;
-    border-bottom: 2px solid $color-accent;
-    h1 {
-        font-size:24px;
-        color:$color-dark;
-        padding-top:12px;
+    
+    margin: 30px 0 30px 0;
+    padding-bottom:30px;
+    border-bottom: 2px solid $color-xxxlight;
+    h1#header-logo {
+        @extend .text-xtight;
+        font-size:42px;
+        line-height:0.9em;     
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px #000;
+    }        
+    
+    h3 {
+        @extend .text-tight;
+        font-size:16px;
+        margin-bottom:0.67em;
         
-    }
-    
-    h2 {
-        font-size:18px;
-    }
-    
-    h3 {            
-        color:$color-light;
+        i {
+            color:$color-xxxlight;
+            margin-right: 0.25em;
+        }
     }
 }
 
 article {
     @extend .clearfix;
     
-    margin:50px $horizontal-gutter;    
+    //margin:50px 0;    
     p {
         display:block;
+        color:$color-xlight;
+        line-height: 1.6;
+    }
+    
+    h2 {
+        @extend .text-tight;
         
+        padding: 0.67em 0;
+        margin-bottom: 0.67em;
+        color: $color-accent;
+        border-bottom:1px solid $color-accent;//$color-xxxxlight;
+        font-size:22px;
+        font-weight: normal;
+    }
+    
+    h3 {
+        font-size:18px;
+        
+    }
+    
+    .one-half {
+        box-sizing: border-box;
+        
+        &:nth-child(2n+1) {
+            padding-right:1.67em;   
+        }
+        &:nth-child(2n) {
+            padding-left:1.67em;
+        }
+    }
+    
+    .year {
+        color: $color-xxxlight;
     }
 }
 
 footer {
     @extend .clearfix;
     
-    border-top:1px solid $color-light;
-    margin:0px $horizontal-gutter;
+    border-top:1px solid $color-xxlight;
+    margin:#{$wrapper-gutter}px 0 0 0;
     padding:12px;
     font-size:12px;
     color: $color-light;
@@ -75,8 +110,14 @@ a {
         text-decoration: underline;        
     }
 }
-h1, h2, h3 {
-    font-weight: normal;
+h1, h2 {
+    font-weight: bold;
+    font-family: 'Montserrat';
+    
+}
+
+i {
+    vertical-align: middle;
 }
 
 @media screen and (max-width:#{$width-max}px) {

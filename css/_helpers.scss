@@ -26,12 +26,33 @@
     font-weight:bold;
 }
 
+.text-tight {
+    letter-spacing: -1px;
+}
+
+.text-xtight {
+    letter-spacing: -2px;
+}
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
+.floatright {
+    float: right;
+}
+
 .monospaced {
     font-family:'Courier New',monospace;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
 }
