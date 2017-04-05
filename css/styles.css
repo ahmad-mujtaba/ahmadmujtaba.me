@@ -136,7 +136,8 @@ header {
     font-size: 42px;
     line-height: 0.9em;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px #000; }
+    text-shadow: 1px 1px 2px #000;
+    width: 250px; }
   header h3 {
     font-size: 16px;
     margin-bottom: 0.67em;
@@ -151,17 +152,20 @@ article p {
   line-height: 1.6; }
 article h2 {
   padding: 0.67em 0;
-  margin-bottom: 0.67em;
+  margin: 0.67em 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 22px;
   font-weight: normal; }
+  article h2 i {
+    color: #F75433;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8); }
 article h3 {
   font-size: 18px; }
 article .one-half {
   box-sizing: border-box; }
-  article .one-half:nth-child(2n+1) {
+  article .one-half.left {
     padding-right: 18px; }
-  article .one-half:nth-child(2n) {
+  article .one-half.right {
     padding-left: 18px; }
 article .year {
   color: rgba(255, 255, 255, 0.35); }
@@ -169,40 +173,44 @@ article .year {
 table#skills {
   width: 100%; }
   table#skills td {
-    padding: 0.4em; }
+    padding: 0.4em;
+    vertical-align: middle; }
     table#skills td.tech {
       width: 25%;
       font-weight: bold; }
     table#skills td .lvl-wrapper {
       font-size: 0;
       height: 5px;
-      background: rgba(255, 255, 255, 0.15);
-      position: relative;
-      top: -8px; }
+      background: rgba(255, 255, 255, 0.15); }
+      table#skills td .lvl-wrapper span {
+        transition: width 500ms ease-out; }
       table#skills td .lvl-wrapper .lvl {
         display: inline-block;
-        background: #FC505C;
-        height: 5px; }
-        table#skills td .lvl-wrapper .lvl.lvl-1 {
-          width: 10%; }
-        table#skills td .lvl-wrapper .lvl.lvl-2 {
-          width: 20%; }
-        table#skills td .lvl-wrapper .lvl.lvl-3 {
-          width: 30%; }
-        table#skills td .lvl-wrapper .lvl.lvl-4 {
-          width: 40%; }
-        table#skills td .lvl-wrapper .lvl.lvl-5 {
-          width: 50%; }
-        table#skills td .lvl-wrapper .lvl.lvl-6 {
-          width: 60%; }
-        table#skills td .lvl-wrapper .lvl.lvl-7 {
-          width: 70%; }
-        table#skills td .lvl-wrapper .lvl.lvl-8 {
-          width: 80%; }
-        table#skills td .lvl-wrapper .lvl.lvl-9 {
-          width: 90%; }
-        table#skills td .lvl-wrapper .lvl.lvl-10 {
-          width: 100%; }
+        background: #F75433;
+        height: 5px;
+        width: 0%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-0 {
+    width: 0%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-1 {
+    width: 10%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-2 {
+    width: 20%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-3 {
+    width: 30%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-4 {
+    width: 40%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-5 {
+    width: 50%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-6 {
+    width: 60%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-7 {
+    width: 70%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-8 {
+    width: 80%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-9 {
+    width: 90%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-10 {
+    width: 100%; }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.55);
@@ -212,7 +220,7 @@ footer {
   color: rgba(255, 255, 255, 0.85); }
 
 a {
-  color: #FC505C;
+  color: #F75433;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -221,17 +229,24 @@ h1, h2 {
   font-weight: bold;
   font-family: 'Montserrat'; }
 
-i {
-  vertical-align: middle; }
-
 @media screen and (max-width: 1024px) {
   #wrapper {
     width: 100%;
     box-sizing: border-box; } }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
+  header h1, header h2, header h3 {
+    text-align: center; }
+  header h1#header-logo {
+    width: 100%; }
+  header .one-half {
+    margin-bottom: 1em; }
+
   .one-half {
     float: none;
     width: 100%; }
+    .one-half.left, .one-half.right {
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
     .one-half.text-right, table#skills td.one-half.tech {
       text-align: left; } }
 

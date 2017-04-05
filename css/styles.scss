@@ -35,6 +35,7 @@ header {
         line-height:0.9em;     
         text-transform: uppercase;
         text-shadow: 1px 1px 2px #000;
+        width: 250px;
     }        
     
     h3 {
@@ -64,10 +65,15 @@ article {
         @extend .text-tight;
         
         padding: 0.67em 0;
-        margin-bottom: 0.67em;
+        margin: 0.67em 0;
         border-bottom:1px solid $color-xxxxlight;
         font-size:22px;
         font-weight: normal;
+        
+        i {
+            color: $color-accent;
+            text-shadow: 0px 0px 1px rgba(0,0,0,0.8);
+        }
     }
     
     h3 {
@@ -78,10 +84,10 @@ article {
     .one-half {
         box-sizing: border-box;
         
-        &:nth-child(2n+1) {
+        &.left {
             padding-right:18px;   
         }
-        &:nth-child(2n) {
+        &.right {
             padding-left:18px;
         }
     }
@@ -95,6 +101,7 @@ table#skills {
     width: 100%;
     td {
         padding:0.4em;
+        vertical-align: middle;
         
         &.tech {
             @extend .text-right;
@@ -110,26 +117,30 @@ table#skills {
            font-size:0;
            height: 5px;
            background: $color-xxxxlight;
-           position: relative;
-           top: -8px;
-           
+           span {
+            transition: width 500ms ease-out;
+           }
            .lvl {
                 display: inline-block;
                 background: $color-accent;
                 height: 5px;
+                width: 0%;
                 
-                &.lvl-1     {width:10%;}
-                &.lvl-2     {width:20%;}
-                &.lvl-3     {width:30%;}
-                &.lvl-4     {width:40%;}
-                &.lvl-5     {width:50%;}
-                &.lvl-6     {width:60%;}
-                &.lvl-7     {width:70%;}
-                &.lvl-8     {width:80%;}
-                &.lvl-9     {width:90%;}
-                &.lvl-10    {width:100%;}
+                
            }
         }
+    }
+    
+    &.triggerAnimation {
+        td {
+          .lvl-wrapper {
+            
+            @for $i from 0 through 10 {
+                .lvl-#{$i} { width: percentage($i/10);}
+            }            
+          }
+        }
+            
     }
 }
 
@@ -158,10 +169,6 @@ h1, h2 {
     
 }
 
-i {
-    vertical-align: middle;
-}
-
 @media screen and (max-width:#{$width-max}px) {
     #wrapper {
         width:100%;
@@ -169,10 +176,31 @@ i {
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
+    
+    header {
+        h1,h2,h3 {
+            text-align: center;
+        }
+        h1#header-logo {
+            width: 100%;
+        }
+        
+        .one-half {
+            margin-bottom:1em;
+        }
+    }
+    
+    
+    
     .one-half {
         float: none;
         width: 100%;
+        
+        &.left, &.right {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
         
         &.text-right {
             text-align: left;

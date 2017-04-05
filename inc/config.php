@@ -1,11 +1,9 @@
 <?php
 
-if(!strpos($_SERVER["SERVER_SOFTWARE"], "Win")) {
-	// prod
-	include("config.prod.php");
-} else {
-	// dev
-	include("config.dev.php");
-}
+	if($_SERVER["SERVER_ADDR"] === "::1") {	
+		include("config.dev.php");
+	} else {
+		include("config.prod.php");
+	}
 
 ?>

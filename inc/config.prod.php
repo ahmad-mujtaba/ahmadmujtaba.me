@@ -1,5 +1,5 @@
 <?php
 
-	define("SITE_ROOT", "https://ahmadmujtaba.me/ahmadmujtaba.me");
+	define('SITE_ROOT', "https://ahmadmujtaba.me/ahmadmujtaba.me");
 	
 ?>
