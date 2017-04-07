@@ -48,6 +48,10 @@ header {
             color:$color-xxxlight;
             margin-right: 0.25em;
         }
+        
+        a {
+            color: $color !important;
+        }
     }
 }
 
@@ -77,9 +81,10 @@ article {
     }
     
     h3 {
-        font-size:18px;
-        
+        font-size:18px; 
     }
+    
+    
     
     .one-half {
         box-sizing: border-box;
@@ -190,6 +195,8 @@ h1, h2 {
             margin-bottom:1em;
         }
     }
+    
+    
     
     
     

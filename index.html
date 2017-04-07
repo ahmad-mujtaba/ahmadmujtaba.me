@@ -14,7 +14,7 @@
             <meta name='viewport' content='width=device-width, initial-scale=1'>
             
             <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,400i,700,700i' rel='stylesheet'> 
-            <link href='<?php echo SITE_ROOT; ?>/css/styles.css' rel='stylesheet' />
+            <link href='<?php echo SITE_ROOT; ?>/css/styles.css<?php echo $devCacheBusterHash; ?>' rel='stylesheet' />
 			<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
         </head>
         <body>
@@ -24,8 +24,9 @@
                         <h1 id='header-logo'>Mujtaba Ahmad</h1> 
                     </div>
                     <div class='one-half'>
-                        <h3 id='header-email'><i class="mdi mdi-email-outline"></i> mujtaba.ahmad91@gmail.com</h3>
-                        <h3 id='header-phone'><i class="mdi mdi-phone"></i> +91 97666 66845</h3>
+                        <h3 id='header-email'><i class="mdi mdi-email-outline"></i> <a href='mailto:mujtaba.ahmad91@gmail.com'> mujtaba.ahmad91@gmail.com</a></h3>
+                        <h3 id='header-phone'><i class="mdi mdi-phone"></i> <a href='tel:+919766666845'>+91 97666 66845</a></h3>
+						<h3 id='header-github'><i class="mdi mdi-github-circle"></i> <a href='https://github.com/ahmad-mujtaba/' target='_blank'>ahmad-mujtaba</a></h3>
                     </div>
                 </header>
                 
@@ -89,6 +90,6 @@
             </main>
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script src="<?php echo SITE_ROOT;?>/js/app.js"></script>
+			<script src="<?php echo SITE_ROOT;?>/js/app.js<?php echo $devCacheBusterHash; ?>"></script>
         </body>
     </html>
