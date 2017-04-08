@@ -202,6 +202,65 @@ h1, h2 {
     
 }
 
+html {
+    body.print {
+        background:#fff;
+        color:#111;
+        
+        header {
+            h1#header-logo {
+                text-shadow: none !important;
+            }
+            
+            h3 {
+                &#header-github {
+                    display: none;
+                }
+                
+                a, i {
+                    color:#111 !important;
+                }
+                
+                
+            }
+        }
+        
+        article {
+            
+            h2 {
+                i {
+                    color:#333;
+                    text-shadow: none;
+                }
+            }
+            p, ul, li{
+                color:#444;
+            }
+            li:before  {
+                color:#777;
+            }
+            
+            table#skills {
+                .lvl-wrapper {
+                    background: #ccc;
+                    
+                    .lvl {
+                        background:#333;
+                    }
+                }
+            }
+            .year {
+                color:#777 !important;
+            }
+        }
+        
+        footer {
+            display: none;
+        }
+        
+    }    
+}
+
 @media screen and (max-width:#{$width-max}px) {
     #wrapper {
         width:100%;

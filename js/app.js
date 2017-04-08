@@ -13,7 +13,12 @@ App = {
             $("table#skills").addClass("triggerAnimation");
         },0);
         
-        
+        $("a.print").on("click", function(e){
+            
+            $("body").addClass("print");
+            window.print();
+            e.preventDefault();
+        });
         
     },    
     
