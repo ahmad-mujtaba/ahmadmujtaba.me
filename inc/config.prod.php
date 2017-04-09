@@ -1,6 +1,6 @@
 <?php
 
 	define('SITE_ROOT', "https://ahmadmujtaba.me/ahmadmujtaba.me");
-	$devCacheBusterHash = "";	// blank for prod
+	$devCacheBusterHash = "?v=1";	// blank for prod
 	
 ?>
