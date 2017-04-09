@@ -44,6 +44,13 @@ header {
         margin-bottom:0.67em;
         margin-left: 18px;
         
+        &#header-github {
+            display: block;
+        }
+        &#header-link{
+            display: none;
+        }
+        
         i {
             color:$color-xxxlight;
             margin-right: 0.25em;
@@ -68,22 +75,27 @@ article {
     
     ul {    
         counter-reset: li-counter;
+        margin: 1em 0;
         li {
-            color:$color-xlight;
-            margin: 1em 0 1em 0em;
+            color:$color-xlight;            
             vertical-align: text-top;
+            margin-bottom: 1em;
             &:before {
                 content: counter(li-counter, decimal-leading-zero);
                 counter-increment: li-counter;
                 color:$color-xxxxlight;                
                 display: block;
-                float:left;
-                height:2em;
-                margin-right:1em;
+                float:left;                
             }
             &:after {
                 clear:left;
                 content:"";
+                display: block;
+            }
+            
+            span {
+                display: block;
+                margin-left: 1.67em;
             }
         }
     }
@@ -110,6 +122,7 @@ article {
     h4 {
         margin:1.67em 0 0 0;
         font-weight:bold;
+        color: $color;
     }
     
     
@@ -180,7 +193,7 @@ table#skills {
 footer {
     @extend .clearfix;
     
-    border-top:1px solid $color-xxlight;
+    border-top:1px solid $color-xxxlight;
     margin:#{$wrapper-gutter}px 0 0 0;
     padding:12px 0;
     font-size:12px;
@@ -202,12 +215,32 @@ h1, h2 {
     
 }
 
+a.print {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 24px;
+    height:24px;
+    font-size: 22px;
+    padding: 8px;
+    color: $color-xxxlight;
+    cursor: pointer;
+}
+
 html {
     body.print {
         background:#fff;
         color:#111;
         
+        #wrapper {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        
         header {
+            margin: 15px 0 15px 0;
+            padding-bottom: 0;
             h1#header-logo {
                 text-shadow: none !important;
             }
@@ -215,6 +248,9 @@ html {
             h3 {
                 &#header-github {
                     display: none;
+                }
+                &#header-link{
+                    display: block;
                 }
                 
                 a, i {
@@ -228,6 +264,7 @@ html {
         article {
             
             h2 {
+                border-bottom: 1px solid #777;
                 i {
                     color:#333;
                     text-shadow: none;
@@ -237,15 +274,20 @@ html {
                 color:#444;
             }
             li:before  {
-                color:#777;
+                color:#aaa;
             }
             
             table#skills {
-                .lvl-wrapper {
-                    background: #ccc;
+                /* HACK because background colors won't print on most browsers*/
+                .lvl-wrapper {                    
+                    height: 0px;
+                    border-top:5px solid #ccc;
                     
-                    .lvl {
-                        background:#333;
+                    .lvl {                        
+                        height: 0px;
+                        border-top:5px solid #333;
+                        position: relative;
+                        top: -5px;
                     }
                 }
             }
@@ -255,7 +297,12 @@ html {
         }
         
         footer {
-            display: none;
+            height: 2px;
+            border-top:1px solid #333;
+            h3 {
+                display: none;    
+            }
+            
         }
         
     }    
@@ -276,6 +323,11 @@ html {
         }
         h1#header-logo {
             width: 100%;
+            font-size: 32px;
+        }
+        
+        h3 {
+            margin-left: 0;
         }
         
         .one-half {
@@ -283,8 +335,18 @@ html {
         }
     }
     
+    article {
+        
+        .year {
+            font-size: 0.7em;
+        }
+    }
     
-    
+    footer {
+        h3 {
+            text-align: right;
+        }
+    }
     
     
     .one-half {
@@ -300,5 +362,9 @@ html {
             text-align: left;
         }
         
+    }
+    
+    a.print {
+        display: none;
     }
 }

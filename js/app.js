@@ -20,6 +20,10 @@ App = {
             e.preventDefault();
         });
         
+        $("article ul li").each(function(){
+            $(this).wrapInner("<span/>");   
+        });
+        
     },    
     
     

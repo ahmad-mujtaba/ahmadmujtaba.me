@@ -27,7 +27,7 @@
                         <h3 id='header-email'><i class="mdi mdi-email-outline"></i> <a href='mailto:mujtaba.ahmad91@gmail.com'> mujtaba.ahmad91@gmail.com</a></h3>
                         <h3 id='header-phone'><i class="mdi mdi-phone"></i> <a href='tel:+919766666845'>+91 97666 66845</a></h3>
 						<h3 id='header-github'><i class="mdi mdi-github-circle"></i> <a href='https://github.com/ahmad-mujtaba/' target='_blank'>ahmad-mujtaba</a></h3>
-						<h3 id='header-link'><i class="mdi mdi-link"></i> <a href='https://www.ahmadmujtaba.me'>www.ahmadmujtaba.me</a></h3>
+						<h3 id='header-link'><i class="mdi mdi-earth"></i> <a href='https://www.ahmadmujtaba.me'>www.ahmadmujtaba.me</a></h3>
                     </div>
                 </header>
                 
@@ -38,11 +38,11 @@
 						<h3>
 							<strong>Bachelor of Engineering</strong> <span class='year floatright'>2011&mdash;2015</span> <br>
 							Computer Engineering<br>
-							<strong><em>University of Pune</em></strong>
+							<strong>University of Pune</strong>
 						</h3>
                     </div>
                     <div class='one-half right'>
-                        <h2><i class="mdi mdi-star"></i> Skills</h2>
+                        <h2><i class="mdi mdi-star"></i> Skillset</h2>
                         <table id='skills'>
 							<?php echo $skillsHtml; ?>                            
                         </table>
@@ -57,36 +57,43 @@
 							<br>Persistent Systems Limited
 						</h3>
 						
+						<ul>
+							
+							<li>
 						<h4>Lithium</h4>
                         <p>
 							Worked on an industry leading social web application as part of the Core Engineering team.  <br>
-							Responsibilities included building new features and fixing bugs in the core application back-end. <br>
-							Built standard-compliant and high-performing features while following industry best practices. <br>
-							
+							Responsibilities included building new features and fixing bugs in the core application back-end. <br>							
+							<strong>Technologies :</strong> <em>Apache Tapestry, Lucene, Java, MySql</em>
                         </p>
 						
+						</li>
+						<li>
 						<h4>Community Gateway Portal for Mount Sinai</h4>
                         <p>
 							Part of the team that was responsible for developing and maintenance of a Java based portal application with rich features and integrations with Salesforce CRM and an SSO service.<br>
-							Built and delivered innovative features on time and advocated for best practices
+							Built and delivered innovative features on time and advocated for best practices <br>
+							<strong>Technologies :</strong> <em>Liferay, Java, AUI, jQuery</em>
                         </p>
 						
+						</li>
+						</ul>
 						
                     </div>
                     <div class='one-half right experience'>                        
                         <h3>
-							Freelance and other work <span class='year floatright'>2009&mdash;2015</span>
+							<strong>Freelance and other work</strong> <span class='year floatright'>2009&mdash;2015</span>
 						</h3>
                         <p>
 							<ul>
 								
-								<li>Timetable Android app and accompanying web portal</li>
-								<li>Analytics &mdash; A Web traffic visualization tool</li>
+								<li>Timetable android app and accompanying web back-end</li>
+								<li>Analytics &mdash; A website traffic visualization tool</li>
 								<li>Several utility android apps (for personal use)</li>
-								<li>Mining of chat data for patterns and knowledge</li>
+								<li>Mining of text chat data for patterns and knowledge</li>
 								<li>Numerous WordPress themes and integrations</li>
-								<li>A Real Estate portal (like magicbricks.com)</li>
-								<li>Numerous blogs and websites for clients</li>								
+								<li>Real Estate portal</li>
+								<li>Numerous small scale webdesign projects</li>
 							</ul>
                         </p>
                     </div>
@@ -97,7 +104,7 @@
                         <h2><i class="mdi mdi-trophy"></i> Achievements</h2>
                         <p>
 							<ul>
-								<li>1st prize in IBM's The Great Mind Challenge 2013</li>								
+								<li>1st prize in IBM's The Great Mind Challenge 2013</li>
 								<li>1st prize in Web design competition at PICT, Pune in 2014</li>
 								<li>2nd prize in Web design competition at PICT, Pune in 2013</li>
 								<li>3rd prize in Web design competition at PICT, Pune in 2012</li>
@@ -105,7 +112,6 @@
 								<li>1st prize in .NET Project Competition in KKWIEER in 2013</li>
 								<li>1st prize in college level web design competition at KKWIEER, Nashik in 2013</li>
 								<li>Headed the organising team of Spider Web in Equinox 2014, at KKWIEER, Nashik</li>
-								<li>Secured Project Sponsorship offered by Persistent Systems Limited.</li>
 							</ul>
 						</p>
                     </div>
@@ -113,30 +119,28 @@
                         <h2><i class='mdi mdi-creation'></i> Interests</h2>
                         <p>
 							<ul>
-								
 								<li>Web technologies</li>
 								<li>Photography</li>
 								<li>Aviation</li>
+								<li>Automobiles</li>
 								<li>Science</li>
 							</ul>
                         </p>
                     </div>
-                    
-                    
                 </article>
                 
                 <footer>
                     <div class='one-half'>
-                        <h3><i class="mdi mdi-copyright"></i> 2017</h3>
+                        <h3><i class="mdi mdi-copyright"></i> <?php echo date("Y"); ?></h3>
                     </div>
                     <div class='one-half text-right'>
                         <h3>
-							<a href='#' class='print'><i class="mdi mdi-printer"></i> print</a> &mdash;
 							<a href='https://github.com/ahmad-mujtaba/ahmadmujtaba.me' target='_blank'><i class="mdi mdi-code-tags"></i> source</a>
 						</h3>
                     </div>
                 </footer>
             </main>
+			<a class='print'><i class="mdi mdi-printer"></i></a>
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="<?php echo SITE_ROOT;?>/js/app.js<?php echo $devCacheBusterHash; ?>"></script>

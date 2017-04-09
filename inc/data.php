@@ -7,7 +7,7 @@
 		"HTML"			=> 9,
 		"php"			=> 6,
 		"Vue JS"		=> 3,
-		"Java"			=> 6			
+		"Java"			=> 5			
 	);
 	
 	
