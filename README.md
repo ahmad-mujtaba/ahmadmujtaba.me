@@ -1,2 +1,2 @@
-# AhmadMujtaba.me
-My personal/resume-ish site
+# www.ahmadmujtaba.me
+My Resume
