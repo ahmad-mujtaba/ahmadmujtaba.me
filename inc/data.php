@@ -1,13 +1,13 @@
 <?php
 
 	$skills = array(
-		"JavaScript" 	=> 8,
-		"jQuery"		=> 9,
-		"CSS"			=> 8,
-		"HTML"			=> 9,
-		"php"			=> 6,
+		"JS/jQuery" 		=> 8,		
+		"CSS/SASS"		=> 9,
+		"HTML 5"		=> 9,
+		"php"			=> 7,
 		"Vue JS"		=> 3,
-		"Java"			=> 5			
+		"Java"			=> 5,
+		"Phonegap/Cordova"	=> 6
 	);
 	
 	
