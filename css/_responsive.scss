@@ -1,0 +1,62 @@
+
+@media screen and (max-width:#{$width-max}px) {
+    #wrapper {
+        width:100%;
+        box-sizing:border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        h1,h2,h3 {
+            text-align: center;
+        }
+        h1#header-logo {
+            width: 100%;
+            font-size: 32px;
+        }
+        
+        h3 {
+            margin-left: 0;
+        }
+        
+        .one-half {
+            margin-bottom:1em;
+        }
+    }
+    
+    article {
+        
+        .year {
+            font-size: 0.7em;
+            margin-top: 5px;
+        }
+    }
+    
+    footer {
+        h3 {
+            text-align: right;
+        }
+    }
+    
+    
+    .one-half {
+        float: none;
+        width: 100%;
+        
+        &.left, &.right {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        
+        &.text-right {
+            text-align: left;
+        }
+        
+    }
+    
+    a.print {
+        display: none;
+    }
+}

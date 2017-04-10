@@ -1,6 +1,6 @@
 <?php
 
-	include("inc/includes.php");	
+	include('inc/includes.php');	
 	
 	
 ?>
@@ -12,11 +12,11 @@
             <meta charset='utf-8'>
             <meta http-equiv='x-ua-compatible' content='ie=edge'>
             <meta name='viewport' content='width=device-width, initial-scale=1'>
-			<link rel='shortcut icon' href='<?php echo SITE_ROOT; ?>/favicon.ico' type='image/x-icon' />
+			<link rel='shortcut icon' href='<?php echo SITE_ROOT; ?>/favicon.ico<?php echo $staticAssetsVersion; ?>' type='image/x-icon' />
             
             <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,400i,700,700i' rel='stylesheet'> 
-            <link href='<?php echo SITE_ROOT; ?>/css/styles.css<?php echo $devCacheBusterHash; ?>' rel='stylesheet' />
-			<link rel="stylesheet" href="//cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css">
+            <link href='<?php echo SITE_ROOT; ?>/css/styles.css<?php echo $staticAssetsVersion; ?>' rel='stylesheet' />
+			<link rel='stylesheet' href='//cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css'>
         </head>
         <body>
             <main id='wrapper'>
@@ -25,16 +25,16 @@
                         <h1 id='header-logo'>Mujtaba Ahmad</h1> 
                     </div>
                     <div class='one-half'>
-                        <h3 id='header-email'><i class="mdi mdi-email-outline"></i> <a href='mailto:mujtaba.ahmad91@gmail.com'> mujtaba.ahmad91@gmail.com</a></h3>
-                        <h3 id='header-phone'><i class="mdi mdi-phone"></i> <a href='tel:+919766666845'>+91 97666 66845</a></h3>
-						<h3 id='header-github'><i class="mdi mdi-github-circle"></i> <a href='https://github.com/ahmad-mujtaba/' target='_blank'>ahmad-mujtaba</a></h3>
-						<h3 id='header-link'><i class="mdi mdi-earth"></i> <a href='https://www.ahmadmujtaba.me'>www.ahmadmujtaba.me</a></h3>
+                        <h3 id='header-email'><i class='mdi mdi-email-outline'></i> <a href='mailto:mujtaba.ahmad91@gmail.com'> mujtaba.ahmad91@gmail.com</a></h3>
+                        <h3 id='header-phone'><i class='mdi mdi-phone'></i> <a href='tel:+919766666845'>+91 97666 66845</a></h3>
+						<h3 id='header-github'><i class='mdi mdi-github-circle'></i> <a href='https://github.com/ahmad-mujtaba/' target='_blank'>ahmad-mujtaba</a></h3>
+						<h3 id='header-link'><i class='mdi mdi-earth'></i> <a href='https://www.ahmadmujtaba.me'>www.ahmadmujtaba.me</a></h3>
                     </div>
                 </header>
                 
                 <article>
                     <div class='one-half left'>
-                        <h2><i class="mdi mdi-school"></i> Education</h2>
+                        <h2><i class='mdi mdi-school'></i> Education</h2>
 						
 						<h3>
 							<strong>Bachelor of Engineering</strong> <span class='year floatright'>2011&mdash;2015</span> <br>
@@ -43,14 +43,14 @@
 						</h3>
                     </div>
                     <div class='one-half right'>
-                        <h2><i class="mdi mdi-star"></i> Skillset</h2>
+                        <h2><i class='mdi mdi-star'></i> Skillset</h2>
                         <table id='skills'>
 							<?php echo $skillsHtml; ?>                            
                         </table>
                     </div>
                     
                     
-					<h2><i class="mdi mdi-account-star"></i> Experience</h2>
+					<h2><i class='mdi mdi-account-star'></i> Experience</h2>
                     <div class='one-half left experience'>
                         
                         <h3>
@@ -102,7 +102,7 @@
 					<div style='clear:both;'></div>
 					
                     <div class='one-half left'>
-                        <h2><i class="mdi mdi-trophy"></i> Achievements</h2>
+                        <h2><i class='mdi mdi-trophy'></i> Achievements</h2>
                         <p>
 							<ul>
 								<li>1st prize in IBM's The Great Mind Challenge 2013</li>
@@ -132,19 +132,19 @@
                 
                 <footer>
                     <div class='one-half'>
-                        <h3><i class="mdi mdi-copyright"></i> <?php echo date("Y"); ?></h3>
+                        <h3><i class='mdi mdi-copyright'></i> <?php echo date('Y'); ?></h3>
                     </div>
                     <div class='one-half text-right'>
                         <h3>
-							<a href='https://github.com/ahmad-mujtaba/ahmadmujtaba.me' target='_blank'><i class="mdi mdi-code-tags"></i> source</a>
+							<a href='https://github.com/ahmad-mujtaba/ahmadmujtaba.me' target='_blank'><i class='mdi mdi-code-tags'></i> source</a>
 						</h3>
                     </div>
                 </footer>
             </main>
-			<a class='print'><i class="mdi mdi-printer"></i></a>
+			<a class='print'><i class='mdi mdi-printer'></i></a>
 			
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script src="<?php echo SITE_ROOT;?>/js/app.js<?php echo $devCacheBusterHash; ?>"></script>
+			<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+			<script src='<?php echo SITE_ROOT;?>/js/app.js<?php echo $staticAssetsVersion; ?>'></script>
 			<script>
 				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

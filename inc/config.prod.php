@@ -1,6 +1,6 @@
 <?php
 
 	define('SITE_ROOT', "https://ahmadmujtaba.me/ahmadmujtaba.me");
-	$devCacheBusterHash = "?v=1";	// blank for prod
+	$staticAssetsVersion = "?v=2";	// bump this everytime significant changes are made
 	
 ?>
