@@ -18,7 +18,7 @@
             <link href='<?php echo SITE_ROOT; ?>/css/styles.css<?php echo $staticAssetsVersion; ?>' rel='stylesheet' />
 			<link rel='stylesheet' href='//cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css'>
         </head>
-        <body>
+        <body class="<?php echo isset($_GET["print"]) ? "print" : ""; ?>">
             <main id='wrapper'>
                 <header>
                     <div class='one-half'>
