@@ -33,6 +33,10 @@
     
     article {
         
+        &.bio {
+            color:#111;    
+        }
+        
         h2 {
             border-bottom: 1px solid #777;
             i {
@@ -41,6 +45,9 @@
             }
         }
         
+        h3.skill-title {
+            color:#999;
+        }
         h3, h4 {
             color: #111;
         }

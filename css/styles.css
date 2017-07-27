@@ -1,2 +1,428 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{font-weight:normal;text-align:left}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}a:focus{outline:thin dotted}a:hover,a:active{outline:0}a img{border:0}.one-half{float:left;width:50%}.clear{clear:both}.text-center{text-align:center}.text-right,table#skills td.tech{text-align:right}.text-light{color:rgba(255,255,255,0.85)}.hero{font-size:48px;font-weight:bold}.text-tight,header h3,article h2{letter-spacing:-1px}.text-xtight,header h1#header-logo{letter-spacing:-2px}.clearfix:after,header:after,article:after,footer:after{content:"";display:table;clear:both}.floatright{float:right}.monospaced{font-family:'Courier New',monospace}strong{font-weight:bold}em{font-style:italic}body{font-family:'Roboto',sans-serif;font-size:16px;color:#fff;background-color:#152b46;background:#152b46 radial-gradient(ellipse at top center, #295489 0%, #152b46 75%) no-repeat}#wrapper{margin:0px auto;width:1024px;padding:20px}header{margin:30px 0 30px 0;padding-bottom:30px;border-bottom:2px solid rgba(255,255,255,0.35)}header h1#header-logo{font-size:42px;line-height:0.9em;text-transform:uppercase;text-shadow:1px 1px 2px #000;width:250px}header h3{font-size:16px;margin-bottom:0.67em;margin-left:18px}header h3#header-github{display:block}header h3#header-link{display:none}header h3 i{color:rgba(255,255,255,0.35);margin-right:0.25em}header h3 a{color:#fff !important}article p{display:block;color:rgba(255,255,255,0.75);line-height:1.6;margin-top:0.67em}article ul{counter-reset:li-counter;margin:1em 0}article ul li{color:rgba(255,255,255,0.75);vertical-align:text-top;margin-bottom:1em}article ul li:before{content:counter(li-counter,decimal-leading-zero);counter-increment:li-counter;color:rgba(255,255,255,0.15);display:block;float:left}article ul li:after{clear:left;content:"";display:block}article ul li span{display:block;margin-left:1.67em}article h2{padding:0.67em 0;margin:0.67em 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:22px;font-weight:normal}article h2 i{color:#F75433;text-shadow:0px 0px 1px rgba(0,0,0,0.8)}article h3{font-size:20px}article h4{margin:1.67em 0 0 0;font-weight:bold;color:#fff}article .one-half{box-sizing:border-box}article .one-half.left{padding-right:18px}article .one-half.right{padding-left:18px}article .year{color:rgba(255,255,255,0.35)}table#skills{width:100%}table#skills td{padding:0.4em;vertical-align:middle}table#skills td.tech{width:25%;font-weight:bold}table#skills td .lvl-wrapper{font-size:0;height:5px;background:rgba(255,255,255,0.15)}table#skills td .lvl-wrapper span{transition:width 500ms ease-out}table#skills td .lvl-wrapper .lvl{display:inline-block;background:#F75433;height:5px;width:0%}table#skills.triggerAnimation td .lvl-wrapper .lvl-0{width:0%}table#skills.triggerAnimation td .lvl-wrapper .lvl-1{width:10%}table#skills.triggerAnimation td .lvl-wrapper .lvl-2{width:20%}table#skills.triggerAnimation td .lvl-wrapper .lvl-3{width:30%}table#skills.triggerAnimation td .lvl-wrapper .lvl-4{width:40%}table#skills.triggerAnimation td .lvl-wrapper .lvl-5{width:50%}table#skills.triggerAnimation td .lvl-wrapper .lvl-6{width:60%}table#skills.triggerAnimation td .lvl-wrapper .lvl-7{width:70%}table#skills.triggerAnimation td .lvl-wrapper .lvl-8{width:80%}table#skills.triggerAnimation td .lvl-wrapper .lvl-9{width:90%}table#skills.triggerAnimation td .lvl-wrapper .lvl-10{width:100%}footer{border-top:1px solid rgba(255,255,255,0.35);margin:20px 0 0 0;padding:12px 0;font-size:12px;color:rgba(255,255,255,0.85)}a{color:#F75433;text-decoration:none}a:hover{text-decoration:underline}h1,h2{font-weight:bold;font-family:'Montserrat'}a.print{position:fixed;top:8px;right:8px;display:block;width:24px;height:24px;font-size:22px;padding:8px;color:rgba(255,255,255,0.35);cursor:pointer}@media screen and (max-width: 1024px){#wrapper{width:100%;box-sizing:border-box}}@media screen and (max-width: 768px){header h1,header h2,header h3{text-align:center}header h1#header-logo{width:100%;font-size:32px}header h3{margin-left:0}header .one-half{margin-bottom:1em}article .year{font-size:0.7em;margin-top:5px}footer h3{text-align:right}.one-half{float:none;width:100%}.one-half.left,.one-half.right{padding-left:0 !important;padding-right:0 !important}.one-half.text-right,table#skills td.one-half.tech{text-align:left}a.print{display:none}}body.print{background:#fff;color:#111}body.print #wrapper{padding-bottom:0;padding-top:0}body.print header{margin:15px 0 15px 0;padding-bottom:0}body.print header h1#header-logo{text-shadow:none !important}body.print header h3#header-github{display:none}body.print header h3#header-link{display:block}body.print header h3 a,body.print header h3 i{color:#111 !important}body.print article h2{border-bottom:1px solid #777}body.print article h2 i{color:#333;text-shadow:none}body.print article h3,body.print article h4{color:#111}body.print article p,body.print article ul,body.print article li{color:#444}body.print article li:before{color:#aaa}body.print article table#skills .lvl-wrapper{height:0px;border-top:5px solid #ccc}body.print article table#skills .lvl-wrapper .lvl{height:0px;border-top:5px solid #333;position:relative;top:-5px}body.print article .year{color:#777 !important}body.print footer{height:2px;border-top:1px solid #333}body.print footer h3{display:none}body.print a.print{display:none}@media print{body{background:#fff;color:#111}body #wrapper{padding-bottom:0;padding-top:0}body header{margin:15px 0 15px 0;padding-bottom:0}body header h1#header-logo{text-shadow:none !important}body header h3#header-github{display:none}body header h3#header-link{display:block}body header h3 a,body header h3 i{color:#111 !important}body article h2{border-bottom:1px solid #777}body article h2 i{color:#333;text-shadow:none}body article h3,body article h4{color:#111}body article p,body article ul,body article li{color:#444}body article li:before{color:#aaa}body article table#skills .lvl-wrapper{height:0px;border-top:5px solid #ccc}body article table#skills .lvl-wrapper .lvl{height:0px;border-top:5px solid #333;position:relative;top:-5px}body article .year{color:#777 !important}body footer{height:2px;border-top:1px solid #333}body footer h3{display:none}body a.print{display:none}}
+/* =Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+/* grid : */
+.one-half {
+  float: left;
+  width: 50%; }
+
+/* helper classes */
+.clear {
+  clear: both; }
+
+.text-center {
+  text-align: center; }
+
+.text-right, table#skills td.tech {
+  text-align: right; }
+
+.text-light {
+  color: rgba(255, 255, 255, 0.85); }
+
+.hero {
+  font-size: 48px;
+  font-weight: bold; }
+
+.text-tight, header h3, article h2 {
+  letter-spacing: -1px; }
+
+.text-xtight, header h1#header-logo {
+  letter-spacing: -2px; }
+
+.clearfix:after, header:after, article:after, footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.floatright {
+  float: right; }
+
+.monospaced {
+  font-family: 'Courier New',monospace; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+body {
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #152b46;
+  background: #152b46 radial-gradient(ellipse at top center, #295489 0%, #152b46 75%) no-repeat; }
+
+#wrapper {
+  margin: 0px auto;
+  width: 1024px;
+  padding: 20px;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+header {
+  margin: 30px 0 20px 0;
+  padding-bottom: 30px; }
+  header h1#header-logo {
+    font-size: 42px;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    width: 250px; }
+  header h3 {
+    font-size: 16px;
+    margin-bottom: 0.67em;
+    margin-left: 18px; }
+    header h3#header-github {
+      display: block; }
+    header h3#header-link {
+      display: none; }
+    header h3 i {
+      color: rgba(255, 255, 255, 0.35);
+      margin-right: 0.25em; }
+    header h3 a {
+      color: #fff !important; }
+
+article.bio {
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  padding: 0; }
+article p {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin-top: 0.67em; }
+article ul {
+  counter-reset: li-counter;
+  margin: 1em 0; }
+  article ul li {
+    color: rgba(255, 255, 255, 0.75);
+    vertical-align: text-top;
+    margin-bottom: 1em; }
+    article ul li:before {
+      content: counter(li-counter,decimal-leading-zero);
+      counter-increment: li-counter;
+      color: rgba(255, 255, 255, 0.15);
+      display: block;
+      float: left; }
+    article ul li:after {
+      clear: left;
+      content: "";
+      display: block; }
+    article ul li span {
+      display: block;
+      margin-left: 1.67em; }
+article h2 {
+  padding: 0.67em 0;
+  margin: 0.67em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 22px;
+  font-weight: normal; }
+  article h2 i {
+    color: #F75433;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8); }
+article h3 {
+  font-size: 20px; }
+  article h3.skill-title {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 2em; }
+    article h3.skill-title.no-margin {
+      margin-top: 0; }
+article h4 {
+  margin: 1.67em 0 0 0;
+  font-weight: bold;
+  color: #fff; }
+article .skills {
+  font-size: 18px; }
+article .one-half {
+  box-sizing: border-box; }
+  article .one-half.left {
+    padding-right: 18px; }
+  article .one-half.right {
+    padding-left: 18px; }
+article .year {
+  color: rgba(255, 255, 255, 0.35); }
+
+table#skills {
+  width: 100%; }
+  table#skills td {
+    padding: 0.4em;
+    vertical-align: middle; }
+    table#skills td.tech {
+      width: 25%;
+      font-weight: bold; }
+    table#skills td .lvl-wrapper {
+      font-size: 0;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.15); }
+      table#skills td .lvl-wrapper span {
+        transition: width 500ms ease-out; }
+      table#skills td .lvl-wrapper .lvl {
+        display: inline-block;
+        background: #F75433;
+        height: 5px;
+        width: 0%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-0 {
+    width: 0%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-1 {
+    width: 10%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-2 {
+    width: 20%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-3 {
+    width: 30%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-4 {
+    width: 40%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-5 {
+    width: 50%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-6 {
+    width: 60%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-7 {
+    width: 70%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-8 {
+    width: 80%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-9 {
+    width: 90%; }
+  table#skills.triggerAnimation td .lvl-wrapper .lvl-10 {
+    width: 100%; }
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin: 20px 0 0 0;
+  padding: 12px 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85); }
+
+a {
+  color: #F75433;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+h1, h2 {
+  font-weight: bold;
+  font-family: 'Montserrat'; }
+
+a.print {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 22px;
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.35);
+  cursor: pointer; }
+
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    width: 100%;
+    box-sizing: border-box; } }
+@media screen and (max-width: 768px) {
+  header h1, header h2, header h3 {
+    text-align: center; }
+  header h1#header-logo {
+    width: 100%;
+    font-size: 32px; }
+  header h3 {
+    margin-left: 0; }
+  header .one-half {
+    margin-bottom: 1em; }
+
+  article .year {
+    font-size: 0.7em;
+    margin-top: 5px; }
+
+  footer h3 {
+    text-align: right; }
+
+  .one-half {
+    float: none;
+    width: 100%; }
+    .one-half.left, .one-half.right {
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
+    .one-half.text-right, table#skills td.one-half.tech {
+      text-align: left; }
+
+  a.print {
+    display: none; } }
+body.print {
+  background: #fff;
+  color: #111; }
+  body.print #wrapper {
+    padding-bottom: 0;
+    padding-top: 0; }
+  body.print header {
+    margin: 15px 0 15px 0;
+    padding-bottom: 0; }
+    body.print header h1#header-logo {
+      text-shadow: none !important; }
+    body.print header h3#header-github {
+      display: none; }
+    body.print header h3#header-link {
+      display: block; }
+    body.print header h3 a, body.print header h3 i {
+      color: #111 !important; }
+  body.print article.bio {
+    color: #111; }
+  body.print article h2 {
+    border-bottom: 1px solid #777; }
+    body.print article h2 i {
+      color: #333;
+      text-shadow: none; }
+  body.print article h3.skill-title {
+    color: #999; }
+  body.print article h3, body.print article h4 {
+    color: #111; }
+  body.print article p, body.print article ul, body.print article li {
+    color: #444; }
+  body.print article li:before {
+    color: #aaa; }
+  body.print article table#skills {
+    /* HACK because background colors won't print on most browsers*/ }
+    body.print article table#skills .lvl-wrapper {
+      height: 0px;
+      border-top: 5px solid #ccc; }
+      body.print article table#skills .lvl-wrapper .lvl {
+        height: 0px;
+        border-top: 5px solid #333;
+        position: relative;
+        top: -5px; }
+  body.print article .year {
+    color: #777 !important; }
+  body.print footer {
+    height: 2px;
+    border-top: 1px solid #333; }
+    body.print footer h3 {
+      display: none; }
+  body.print a.print {
+    display: none; }
+
+@media print {
+  body {
+    background: #fff;
+    color: #111; }
+    body #wrapper {
+      padding-bottom: 0;
+      padding-top: 0; }
+    body header {
+      margin: 15px 0 15px 0;
+      padding-bottom: 0; }
+      body header h1#header-logo {
+        text-shadow: none !important; }
+      body header h3#header-github {
+        display: none; }
+      body header h3#header-link {
+        display: block; }
+      body header h3 a, body header h3 i {
+        color: #111 !important; }
+    body article.bio {
+      color: #111; }
+    body article h2 {
+      border-bottom: 1px solid #777; }
+      body article h2 i {
+        color: #333;
+        text-shadow: none; }
+    body article h3.skill-title {
+      color: #999; }
+    body article h3, body article h4 {
+      color: #111; }
+    body article p, body article ul, body article li {
+      color: #444; }
+    body article li:before {
+      color: #aaa; }
+    body article table#skills {
+      /* HACK because background colors won't print on most browsers*/ }
+      body article table#skills .lvl-wrapper {
+        height: 0px;
+        border-top: 5px solid #ccc; }
+        body article table#skills .lvl-wrapper .lvl {
+          height: 0px;
+          border-top: 5px solid #333;
+          position: relative;
+          top: -5px; }
+    body article .year {
+      color: #777 !important; }
+    body footer {
+      height: 2px;
+      border-top: 1px solid #333; }
+      body footer h3 {
+        display: none; }
+    body a.print {
+      display: none; } }
+
 /*# sourceMappingURL=styles.css.map */

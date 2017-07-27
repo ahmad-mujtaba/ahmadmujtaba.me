@@ -26,9 +26,9 @@ header {
     @extend .clearfix;
     
     
-    margin: 30px 0 30px 0;
+    margin: 30px 0 20px 0;
     padding-bottom:30px;
-    border-bottom: 2px solid $color-xxxlight;
+    //border-bottom: 2px solid $color-xxxlight;
     h1#header-logo {
         @extend .text-xtight;
         font-size:42px;
@@ -65,6 +65,14 @@ header {
 article {
     @extend .clearfix;
     
+    
+    &.bio  {
+        text-align: center;
+        font-style: italic;
+        color:$color-light;
+        font-size:16px;
+        padding:0;
+    }
     //margin:50px 0;    
     p {
         display:block;
@@ -116,8 +124,26 @@ article {
     }
     
     h3 {
-        font-size:20px; 
+        font-size:20px;
+        
+        &.skill-title {
+            color: $color-xxxlight;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight:normal;
+            margin-top:2em;
+            
+            &.no-margin {
+                margin-top:0;
+            }
+            
+        }
+        
+        
+        
     }
+    
+    
     
     h4 {
         margin:1.67em 0 0 0;
@@ -125,6 +151,12 @@ article {
         color: $color;
     }
     
+    .skills {
+        
+        font-size:18px;
+        
+        
+    }
     
     
     .one-half {
@@ -141,6 +173,8 @@ article {
     .year {
         color: $color-xxxlight;
     }
+    
+    
 }
 
 table#skills {
