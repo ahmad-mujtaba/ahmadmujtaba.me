@@ -404,7 +404,7 @@ body.print {
       color: #999; }
     body article h3, body article h4 {
       color: #111; }
-    body article p, body article ul, body article li {
+    body article p, body article ul, body article li, body article small {
       color: #444; }
     body article li:before {
       color: #aaa; }
