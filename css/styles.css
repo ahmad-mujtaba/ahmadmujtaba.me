@@ -92,7 +92,7 @@ a img {
   font-size: 48px;
   font-weight: bold; }
 
-.text-tight, header h3, article h2 {
+.text-tight, header .contact-info h3, article h2 {
   letter-spacing: -1px; }
 
 .text-xtight, header h1#header-logo {
@@ -136,42 +136,68 @@ header {
     line-height: 0.9em;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #000;
-    width: 250px; }
-  header h3 {
-    font-size: 16px;
-    margin-bottom: 0.67em;
-    margin-left: 18px; }
-    header h3#header-github {
-      display: block; }
-    header h3#header-link {
-      display: none; }
-    header h3 i {
-      color: rgba(255, 255, 255, 0.35);
-      margin-right: 0.25em; }
-    header h3 a {
-      color: #fff !important; }
+    text-align: center; }
+  header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 25px; }
+  header .contact-info {
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center; }
+    header .contact-info h3 {
+      font-size: 16px;
+      padding: 0.67em;
+      display: inline-block; }
+      header .contact-info h3#header-github {
+        display: inline-block; }
+      header .contact-info h3#header-link {
+        display: none; }
+      header .contact-info h3 i {
+        color: rgba(255, 255, 255, 0.35);
+        margin-right: 0.25em; }
+      header .contact-info h3 a {
+        color: #fff !important; }
 
-article.bio {
-  text-align: center;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 16px;
-  padding: 0; }
-article p {
+article div.p {
   display: block;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
   margin-top: 0.67em; }
-article ul {
+article ol {
   counter-reset: li-counter;
   margin: 1em 0; }
+  article ol.less-margin-top {
+    margin-top: 0.4em; }
+  article ol li {
+    color: rgba(255, 255, 255, 0.75);
+    vertical-align: text-top;
+    margin-bottom: 0.4em; }
+    article ol li:before {
+      content: counter(li-counter,decimal-leading-zero);
+      counter-increment: li-counter;
+      color: rgba(255, 255, 255, 0.15);
+      display: block;
+      float: left; }
+    article ol li:after {
+      clear: left;
+      content: "";
+      display: block; }
+    article ol li span {
+      display: block;
+      margin-left: 1.67em; }
+article ul {
+  margin: 1em 0; }
+  article ul.less-margin-top {
+    margin-top: 0.4em; }
   article ul li {
     color: rgba(255, 255, 255, 0.75);
     vertical-align: text-top;
-    margin-bottom: 1em; }
+    margin-bottom: 0.4em; }
     article ul li:before {
-      content: counter(li-counter,decimal-leading-zero);
-      counter-increment: li-counter;
+      content: "*";
       color: rgba(255, 255, 255, 0.15);
       display: block;
       float: left; }
@@ -183,11 +209,11 @@ article ul {
       display: block;
       margin-left: 1.67em; }
 article h2 {
-  padding: 0.67em 0;
-  margin: 0.67em 0;
+  padding: 0.5em 0;
+  margin: 0.9em 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 22px;
-  font-weight: normal; }
+  font-weight: bold; }
   article h2 i {
     color: #F75433;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8); }
@@ -214,7 +240,8 @@ article .one-half {
   article .one-half.right {
     padding-left: 18px; }
 article .year {
-  color: rgba(255, 255, 255, 0.35); }
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: normal; }
 article small {
   color: rgba(255, 255, 255, 0.35);
   font-size: 0.8em; }
@@ -334,16 +361,19 @@ body.print {
     padding-bottom: 0; }
     body.print header h1#header-logo {
       text-shadow: none !important; }
+    body.print header h2 {
+      color: #333; }
     body.print header h3#header-github {
       display: none; }
     body.print header h3#header-link {
-      display: block; }
+      display: inline-block; }
     body.print header h3 a, body.print header h3 i {
       color: #111 !important; }
   body.print article.bio {
     color: #111; }
   body.print article h2 {
-    border-bottom: 1px solid #777; }
+    border-bottom: 1px solid #777;
+    background: #f8f8f8; }
     body.print article h2 i {
       color: #333;
       text-shadow: none; }
@@ -351,10 +381,12 @@ body.print {
     color: #999; }
   body.print article h3, body.print article h4 {
     color: #111; }
-  body.print article p, body.print article ul, body.print article li {
+  body.print article div.p, body.print article p, body.print article ul, body.print article li {
     color: #444; }
   body.print article li:before {
     color: #aaa; }
+  body.print article small {
+    color: #555; }
   body.print article table#skills {
     /* HACK because background colors won't print on most browsers*/ }
     body.print article table#skills .lvl-wrapper {
@@ -387,16 +419,19 @@ body.print {
       padding-bottom: 0; }
       body header h1#header-logo {
         text-shadow: none !important; }
+      body header h2 {
+        color: #333; }
       body header h3#header-github {
         display: none; }
       body header h3#header-link {
-        display: block; }
+        display: inline-block; }
       body header h3 a, body header h3 i {
         color: #111 !important; }
     body article.bio {
       color: #111; }
     body article h2 {
-      border-bottom: 1px solid #777; }
+      border-bottom: 1px solid #777;
+      background: #f8f8f8; }
       body article h2 i {
         color: #333;
         text-shadow: none; }
@@ -404,10 +439,12 @@ body.print {
       color: #999; }
     body article h3, body article h4 {
       color: #111; }
-    body article p, body article ul, body article li, body article small, body.print article small {
+    body article div.p, body article p, body article ul, body article li {
       color: #444; }
     body article li:before {
       color: #aaa; }
+    body article small {
+      color: #555; }
     body article table#skills {
       /* HACK because background colors won't print on most browsers*/ }
       body article table#skills .lvl-wrapper {

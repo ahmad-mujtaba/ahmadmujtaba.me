@@ -35,62 +35,109 @@ header {
         line-height:0.9em;     
         text-transform: uppercase;
         text-shadow: 1px 1px 2px #000;
-        width: 250px;
-    }        
+        text-align:center;
+        //font-weight: normal;
+    } 
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        //font-weight: lighter;
+        color: $color-xlight;
+        margin-top:25px;
+    }       
     
-    h3 {
-        @extend .text-tight;
-        font-size:16px;
-        margin-bottom:0.67em;
-        margin-left: 18px;
-        
-        &#header-github {
-            display: block;
-        }
-        &#header-link{
-            display: none;
-        }
-        
-        i {
-            color:$color-xxxlight;
-            margin-right: 0.25em;
-        }
-        
-        a {
-            color: $color !important;
+    .contact-info {
+        margin-top: 25px;
+        border-top:1px solid $color-xxxxlight;
+        border-bottom:1px solid $color-xxxxlight;
+        text-align: center;
+
+        h3 {
+            @extend .text-tight;
+            font-size:16px;
+            padding:0.67em;
+            display:inline-block;
+            
+            &#header-github {
+                display: inline-block;
+            }
+            &#header-link{
+                display: none;
+            }
+            
+            i {
+                color:$color-xxxlight;
+                margin-right: 0.25em;
+            }
+            
+            a {
+                color: $color !important;
+            }
         }
     }
+    
 }
 
 article {
     @extend .clearfix;
     
     
-    &.bio  {
-        text-align: center;
-        font-style: italic;
-        color:$color-light;
-        font-size:16px;
-        padding:0;
-    }
     //margin:50px 0;    
-    p {
+    div.p {
         display:block;
         color:$color-xlight;
         line-height: 1.6;
         margin-top:0.67em;
     }
     
-    ul {    
+    ol {    
         counter-reset: li-counter;
         margin: 1em 0;
+
+        &.less-margin-top {
+            margin-top:0.4em;
+        }
+
+
         li {
             color:$color-xlight;            
             vertical-align: text-top;
-            margin-bottom: 1em;
+            margin-bottom: 0.4em;
             &:before {
                 content: counter(li-counter, decimal-leading-zero);
                 counter-increment: li-counter;
+                color:$color-xxxxlight;                
+                display: block;
+                float:left;                
+            }
+            &:after {
+                clear:left;
+                content:"";
+                display: block;
+            }
+            
+            span {
+                display: block;
+                margin-left: 1.67em;
+            }
+        }
+
+
+    }
+
+    ul {
+        margin: 1em 0;
+
+        &.less-margin-top {
+            margin-top:0.4em;
+        }
+
+        li {
+            color:$color-xlight;            
+            vertical-align: text-top;
+            margin-bottom: 0.4em;
+            &:before {
+                content: "*";//counter(li-counter, decimal-leading-zero)"";
                 color:$color-xxxxlight;                
                 display: block;
                 float:left;                
@@ -111,11 +158,12 @@ article {
     h2 {
         @extend .text-tight;
         
-        padding: 0.67em 0;
-        margin: 0.67em 0;
+        padding: 0.5em 0;
+        margin: 0.9em 0;
         border-bottom:1px solid $color-xxxxlight;
         font-size:22px;
-        font-weight: normal;
+        font-weight: bold;
+        
         
         i {
             color: $color-accent;
@@ -172,6 +220,7 @@ article {
     
     .year {
         color: $color-xxxlight;
+        font-weight:normal;
     }
     
     small {

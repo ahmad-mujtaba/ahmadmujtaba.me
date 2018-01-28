@@ -14,13 +14,17 @@
         h1#header-logo {
             text-shadow: none !important;
         }
+
+        h2 {
+            color:#333;
+        }
         
         h3 {
             &#header-github {
                 display: none;
             }
             &#header-link{
-                display: block;
+                display: inline-block;
             }
             
             a, i {
@@ -39,6 +43,7 @@
         
         h2 {
             border-bottom: 1px solid #777;
+            background:#f8f8f8;
             i {
                 color:#333;
                 text-shadow: none;
@@ -51,13 +56,16 @@
         h3, h4 {
             color: #111;
         }
-        p, ul, li{
+        div.p, p, ul, li{
             color:#444;
         }
         li:before  {
             color:#aaa;
         }
         
+        small {
+            color:#555;
+        }
         table#skills {
             /* HACK because background colors won't print on most browsers*/
             .lvl-wrapper {                    

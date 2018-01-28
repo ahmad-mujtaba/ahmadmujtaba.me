@@ -20,7 +20,7 @@ App = {
             e.preventDefault();
         });
         
-        $("article ul li").each(function(){
+        $("article li").each(function(){
             $(this).wrapInner("<span/>");   
         });
         
