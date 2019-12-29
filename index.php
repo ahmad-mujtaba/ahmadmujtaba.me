@@ -7,7 +7,7 @@
 <!DOCTYPE html>
     <html lang='en'>
         <head>
-            <title>Mujtaba Ahmad | Senior Software Engineer</title>
+            <title>Mujtaba Ahmad | Software Engineer II</title>
             
             <meta charset='utf-8'>
             <meta http-equiv='x-ua-compatible' content='ie=edge'>
@@ -23,7 +23,7 @@
                 <header>
                     <div class='header-wrapper'>
 						<h1 id='header-logo'>Mujtaba Ahmad</h1> 
-						<h2>Senior Software Engineer</h2>
+						<h2>Software Engineer II</h2>
                     </div>
                     <div class='contact-info'>
 						<h3 id='header-email'><i class='mdi mdi-map-marker'></i> Pune</h3>
@@ -38,15 +38,13 @@
 					<h2><i class='mdi mdi-briefcase'></i> Profile Summary</h2>
 
 					<ul>
-						<li><strong><?php echo yearsSince("15 June 2015");?></strong> of full-time experience as a software engineer developing high impact applications</li>
-						<li><strong>5+ years</strong> of part-time experience as a freelance web and hybrid mobile application developer</li>
+						<li><strong><?php echo yearsSince("15 June 2015");?></strong> of experience as a software engineer developing high impact applications</li>
+						<li>Skilled in <strong>MEAN/MERN</strong>, <strong>Java</strong>, and <strong>LAMP</strong> based technology stacks</li>
 						<li>Good experience working with both frontend and backend technologies</li>
-						<li>Skilled in <strong>Javascript</strong>, <strong>LAMP</strong>, and <strong>Java</strong> based technology stacks</li>
 						<li>Proficient in building secure web-based client-server solutions</li>
 						<li>Involved in SDLC and familiar with working in an <strong>Agile</strong> environment</li>
 						<li>Involved in <strong>database designing</strong> with table normalization and optimization</li>
 						<li>Familiar with modern Test Automation and CI/CD methodologies</li>
-						<li>Experience in working with both subversion and git based SCM tools</li>
 					</ul>
 				</article>
                 
@@ -65,17 +63,14 @@
 			    
 			
 						<div class="p">
-							<h3 class='skill-title no-margin'>Proficient in &mdash;</h3> 
-							Java/JEE, Liferay, JavaScript, Angular, Node JS, jQuery, php, HTML5, CSS3, SASS, PWA, Hybrid mobile application development, Web application development
+							<h3 class='skill-title no-margin'>Primary skills &mdash;</h3> 
+							JavaScript and frontend JavaScript frameworks (Angular, React TypeScript, jQuery), NodeJS, ES6, Java/JEE, HTML5, CSS3, SASS, PWA, Hybrid mobile application development, Web application development
 						</div>						
 			
 		    			<div class="p">
-		    				<h3 class='skill-title'>Hands-on experience &mdash;</h3> 
-							Angular, Gulp, ES6, Bootstrap, Spring MVC, WordPress, Ionic, Phonegap/Cordova, MySql, Mongo DB
-						</div>								
-				
-				
-			
+		    				<h3 class='skill-title'>Secondary skills &mdash;</h3> 
+							Grunt/Gulp, Bootstrap, Python, php, Spring MVC, WordPress, Ionic, Liferay, Phonegap/Cordova, MySql, Mongo DB
+						</div>
                         <!--<table id='skills'>
 							<?php echo $skillsHtml; ?>                            
                         </table> -->
@@ -85,8 +80,8 @@
 					<h2><i class='mdi mdi-account-star'></i> Employment &amp; project history</h2>
                     <div class='experience'>
                         <h3>
-							<strong>Software Engineer</strong> <span class='year floatright'>since April 2018</span>
-							<br>Knorex Pvt Limited
+							<strong>Software Engineer II</strong> <span class='year floatright'>since April 2018</span>
+							<br>Knorex Pvt Limited (Utility Services Team)
 						</h3>
 
 						<ol>
@@ -94,13 +89,15 @@
 							<li>
 								
 								<div class="p">
-									<strong>Domain</strong> &mdash; Digital Marketing <br>
-									<strong>Role Description</strong> &mdash; 
+									<strong>Domain</strong> &mdash; Programmatic Advertising Solutions <br>
+									<strong>Work</strong> &mdash; 
 
 									<ul class="less-margin-top">
-										<li>Part of the Brand Display team responsible for the in house creative generation product.</li>
+										<li>Developed both the frontend and the backend for a custom quotation generation system from scratch. Integrated the product with company wide SSO, 3rd Party CRM and Document Signing provider</li>
+										<li>Part of the Brand Display team responsible for the in house creative generation system.</li>
 										<li>Also responsible for the building the next generation of the creative testing application used by QA</li>
 										<li>Maintained and developed enhancements to the company websites</li>
+										<li>Wrote web crawlers in python for fetching dynamic content to customer's creatives</li>
 									</ul>
 
 									
@@ -119,8 +116,8 @@
 									<strong>Technologies used</strong> &mdash; <br/>
 									<ul class="less-margin-top">
 										<li><strong>Backend</strong> &mdash; Node JS, Mongo DB, php</li>
-										<li><strong>Frontend</strong> &mdash; Angular 6, jQuery, Angular Material framework </li>
-										<li><strong>Integrations</strong> &mdash; OAuth SSO</li>
+										<li><strong>Frontend</strong> &mdash; Angular, React, jQuery, Angular Material framework</li>
+										<li><strong>Integrations</strong> &mdash; OAuth based single sign-on, Jenkins</li>
 
 									</ul>
 
@@ -225,8 +222,8 @@
 								<li>Numerous small scale webdesign projects</li>
 							</ol>
 
-							<strong>Hobby/college projects</strong> &mdash;
-							<ol>
+							<strong>...and several hobby projects</strong> 
+							<!-- <ol>
 								
 								<li>Timetable &mdash; Hybrid Android application and accompanying web-based backend for teaching faculties</li>								
 								<li>Analytics &mdash; A website traffic visualization tool</li>
@@ -234,7 +231,7 @@
 								<li>Apartment electricity uptime tracker</li>
 								<li>Visual dashboard for ISP's monthly FUP limit</li>
 								<li>Several utility android apps (for personal use)</li>
-							</ol>
+							</ol> -->
                         </div>
                     </div>
                     
